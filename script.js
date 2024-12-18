@@ -56,16 +56,16 @@ function calcularQuantidade(){
             const resultadoMilho = quantidadeRacao * (porcentagemMilhoNucleo/100);
             console.log("resultadoMilho: " + resultadoMilho);
 
-            document.getElementById('milho').innerText = `Milho: ${resultadoMilho}`;
-            document.getElementById('soja').innerText = `Soja: ${resultadoSoja}`;
-            document.getElementById('nucleo').innerText = `Núcleo: ${resultadoNucleo}`;
+            document.getElementById('milho').innerText = `Milho: ${Math.round(resultadoMilho)}`;
+            document.getElementById('soja').innerText = `Soja: ${Math.round(resultadoSoja)}`;
+            document.getElementById('nucleo').innerText = `Núcleo: ${Math.round(resultadoNucleo)}`;
 
         }else{
 
             const resultadoMilho = quantidadeRacao * (porcentagemMilho/100);
             const resultadoSoja = quantidadeRacao * (porcentagemSojaArredondado/100);
-            document.getElementById('milho').innerText = `Milho: ${resultadoMilho}`;
-            document.getElementById('soja').innerText = `Soja: ${resultadoSoja}`;
+            document.getElementById('milho').innerText = `Milho: ${Math.round(resultadoMilho)}`;
+            document.getElementById('soja').innerText = `Soja: ${Math.round(resultadoSoja)}`;
             document.getElementById('nucleo').style.display = 'none';
             
         }
