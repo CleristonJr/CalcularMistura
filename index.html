@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Mistura Ração</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            margin: 100px;
+        }
+        h1{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        }
+    </style>
+    <h1> Calcular Mistura Ração </h1>
+    <form id="calcularMistura">
+        <label for="porcentagemDeProteina">Porcentagem de Proteina (Normalmente 13):</label>
+        <input type="number" id="porcentagemDeProteina" required>
+
+        <label for="quantidadeRacao">Quantidade total de Kg ou g:</label>
+        <input type="number" id="quantidadeRacao" required>
+
+        <label for="porcentagemNucleo">Porcentagem do Núcleo:</label>
+        <input type="number" id="porcentagemNucleo" required>
+
+        <button type="button" onclick="calcularQuantidade()">Calcular</button>
+    </form>
+    <h2 id="milho"></h2>
+    <h2 id="soja"></h2>
+    <h2 id="nucleo"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
